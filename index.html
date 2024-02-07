@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C8</title>
+    <meta name="author" content="C8">
+    <meta name="description" content="inline blocks">
+    <meta name="keywords" content="coding, elemants">
+    <meta name="viewport" content="width=device, intial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Honk&family=Rubik+Glitch+Pop&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: radial-gradient(circle at 0.2% 0.5%, rgb(252, 165, 241) 0%, rgb(181, 255, 255) 100.2%);
+        }
+        footer{
+            font-family: "Honk", system-ui;
+            font-size: 25px;
+            background-color: palevioletred;
+        }
+        .red{
+            font-family: "Mea Culpa", cursive;
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+        }
+        .Thu1{
+            font-family: CormorantGaramond;
+            color: blue;
+        }
+        .Thu2{
+            font-family: CormorantGaramond;
+            color: green;
+        }
+        .month{
+            font-family: "Bungee Spice", sans-serif;
+        }
+        table{
+            /*background-image: url(Fox.avif);*/
+            width: 70%;
+            height: 500px;
+            border-color: greenyellow;
+            border-width: 5px;
+            border-style: ridge;
+        }
+        td{
+            text-align: center;
+            font-family: "Nabla", system-ui;
+            border-color: greenyellow;
+            border-width: 5px;
+            border-style: ridge;
+            font-size: 30px;    
+            color: rgb(255, 0, 174);    
+        }
+        th{
+        background-color: rgb(255, 122, 193);
+            font-size: 21px;
+            font-family: "Single Day", cursive;
+            border-color: greenyellow;
+            border-width: 5px;
+            border-style: ridge;
+            text-align: center;
+            text-shadow: 6px 5px 3px rgb(229, 151, 255); ;
+        }
+        #January{
+            background-image: url(1.jpg);
+            background-size: cover;
+        }
+        #February{
+            background-image: url(2.jpg);
+            background-size: cover;
+        }
+        #March{
+            background-image: url(3.jpg);
+            background-size: cover;
+        }
+        #April{
+            background-image: url(4.jpg);
+            background-size: cover;
+        }
+        #May{
+            background-image: url(5.jpg);
+            background-size: cover;
+        }
+        #June{
+            background-image: url(6.jpg);
+            background-size: cover;
+        }
+        #July{
+            background-image: url(7.jpg);
+            background-size: cover;
+        }
+        #August{
+            background-image: url(aug.png);
+            background-size: cover;
+        }
+        #September{
+            background-image: url(10.jpg);
+            background-size: cover;
+        }
+        #October{
+            background-image: url(11.png);
+            background-size: cover;
+        }
+        #November{
+            background-image: url(12.jpg);
+            background-size: cover;
+        }
+        #December{
+            background-image: url(dec.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+                <li data-target="#myCarousel" data-slide-to="9"></li>
+                <li data-target="#myCarousel" data-slide-to="10"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h1 class="month"><sup><b>2024</b></sup>      January</h1>
+                    <table id="January">
+                        <tr>
+                            <th><b>Sat</b></th>
+                            <th><b>Sun</b></th>
+                            <th><b>Mon</b></th>
+                            <th><b>Tue</b></th>
+                            <th><b>Wed</b></th>
+                            <th><b>Thu</b></th>
+                            <th><b>Fri</b></th>
+                        </tr>
+                        <tr>
+                            <td class="red"></td>
+                            <td class="red"></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="Thu1">4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="red">6</td>
+                            <td class="red">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="Thu2">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="red">13</td>
+                            <td  class="red">14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td class="Thu1">18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td class="red">20</td>
+                            <td  class="red">21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td class="Thu2">25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td class="red">27</td>
+                            <td  class="red">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="Thu1">1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      February</h1>
+                    <table id="February">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">27</td>
+                            <td  class="red">28</td>
+                            <td >29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="Thu2">1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="red">3</td>
+                            <td  class="red">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td class="Thu1">8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td class="red">10</td>
+                            <td  class="red">11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td class="Thu2">15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td class="red">17</td>
+                            <td  class="red">18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td class="Thu1">22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td class="red">24</td>
+                            <td class="red">25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="Thu2">29</td>
+                            <td>1</td>
+                    </table>
+                </div>
+
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      March</h1>
+                    <table id="March">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">24</td>
+                            <td  class="red">25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="Thu1">29</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="red">2</td>
+                            <td  class="red">3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td class="Thu2">7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="red">9</td>
+                            <td  class="red">10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td class="Thu1">14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td class="red">16</td>
+                            <td  class="red">17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td class="Thu2">21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td class="red">23</td>
+                            <td  class="red">24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="Thu1">28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td class="red">30</td>
+                            <td class="red">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="Thu2">4</td>
+                            <td>5</td>
+                        </tr>
+                        </table>
+                </div>
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      April</h1>
+                    <table id="April">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">30</td>
+                            <td  class="red">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="Thu1">4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="red">6</td>
+                            <td  class="red">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="Thu2">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="red">13</td>
+                            <td  class="red">14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td class="Thu1">18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td class="red">20</td>
+                            <td  class="red">21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td class="Thu2">25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td class="red">27</td>
+                            <td  class="red">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td class="Thu1">2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      May</h1>
+                    <table id="May">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">27</td>
+                            <td  class="red">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td class="Thu2">2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td class="red">4</td>
+                            <td  class="red">5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td class="Thu1">9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td class="red">11</td>
+                            <td  class="red">12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td class="Thu2">16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td class="red">18</td>
+                            <td  class="red">19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td class="Thu1">23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td class="red">25</td>
+                            <td  class="red">26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td class="Thu2">30</td>
+                            <td>31</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      June</h1>
+                    <table id="June">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">1</td>
+                            <td  class="red">2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td class="Thu1">6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td class="red">8</td>
+                            <td  class="red">9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td class="Thu2">13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td class="red">15</td>
+                            <td  class="red">16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td class="Thu1">20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td class="red">22</td>
+                            <td  class="red">23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td class="Thu2">27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td class="red">29</td>
+                            <td  class="red">30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="Thu1">4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      July</h1>
+                    <table id="July">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">30</td>
+                            <td class="red">31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="Thu2">4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td class="red">6</td>
+                            <td class="red">7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td class="Thu1">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td class="red">13</td>
+                            <td class="red">14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td class="Thu2">18</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="red">19</td>
+                            <td class="red">20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td class="Thu1">24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td class="red">27</td>
+                            <td class="red">28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="Thu2">1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      August</h1>
+                    <table id="August">
+                        <tr>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                        <tr>
+                            <td class="red">26</td>
+                            <td  class="red">27</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td class="Thu1">1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="red">3</td>
+                            <td  class="red">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td class="Thu2">8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td class="red">10</td>
+                            <td  class="red">11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td class="Thu1">15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td class="red">17</td>
+                            <td  class="red">18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td class="Thu2">22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td class="red">24</td>
+                            <td class="red">25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td class="Thu1">29</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td class="red">31</td>
+                            <td class="red">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="Thu2">5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </div>                
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      September</h1>
+                    <table id="September">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">31</td>
+                            <td  class="red">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="Thu1">5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td class="red">7</td>
+                            <td  class="red">8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="Thu2">12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td class="red">14</td>
+                            <td  class="red">15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td class="Thu1">19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td class="red">21</td>
+                            <td  class="red">22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td class="Thu2">26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td class="red">28</td>
+                            <td  class="red">29</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td class="Thu1">3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      October</h1>
+                    <table id="October">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">28</td>
+                            <td  class="red">29</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td class="Thu2">3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td class="red">5</td>
+                            <td  class="red">6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td class="Thu1">10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td class="red">12</td>
+                            <td  class="red">13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td class="Thu2">17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td class="red">19</td>
+                            <td  class="red">20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td class="Thu1">24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td class="red">26</td>
+                            <td class="red">27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="Thu2">31</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      November</h1>
+                    <table id="November">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">26</td>
+                            <td  class="red">27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td class="Thu1">31</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="red">2</td>
+                            <td  class="red">3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td class="Thu2">7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td class="red">9</td>
+                            <td  class="red">10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td class="Thu1">14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td class="red">16</td>
+                            <td class="red">17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td class="Thu2">21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td class="red">23</td>
+                            <td class="red">24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="Thu1">28</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td class="red">30</td>
+                            <td class="red">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="Thu2">5</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <h1 class="month"><sup><b>2024</b></sup>      December</h1>
+                    <table id="December">
+                        <tr>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td class="red">30</td>
+                            <td class="red">1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td class="Thu1">5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td class="red">7</td>
+                            <td  class="red">8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td class="Thu2">12</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td class="red">14</td>
+                            <td  class="red">15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td class="Thu1">19</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td class="red">21</td>
+                            <td  class="red">22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td class="Thu2">26</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <td class="red">28</td>
+                            <td  class="red">29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td class="Thu1"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer>Designed and Developed By Karthikrishnan J for Ms.Lekha</footer>
+    </center>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    </center>
+</body>
+</html>
